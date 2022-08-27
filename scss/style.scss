@@ -42,6 +42,11 @@
       @content;
     }
   }
+  @if ($breakpoint == phone-s) {
+    @media screen and (max-width: 375px) {
+      @content;
+    }
+  }
 }
 //Resets
 *,
@@ -85,7 +90,8 @@ a {
 
   margin-bottom: 2rem;
   @include respond(tab-port) {
-    font-size: 2rem;
+    line-height: 40px;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
   }
 }
@@ -144,6 +150,9 @@ a {
 }
 .width {
   width: 80%;
+  @include respond(tab-port) {
+    width: 100%;
+  }
 }
 //Header
 .header {
@@ -155,10 +164,21 @@ a {
   width: min(100%, 1350px);
   margin-inline: auto;
   margin-bottom: 2rem;
+  &__container {
+    width: 90vw;
+    margin-inline: auto;
+    height: 100%;
+  }
   @include respond(tab-port) {
     min-height: none;
     height: auto;
     margin-bottom: 4rem;
+  }
+  @include respond(phone) {
+    padding: 0;
+    &__logo {
+      width: 85px;
+    }
   }
   &__nav {
     display: flex;
@@ -220,30 +240,45 @@ a {
   font-family: "Raleway";
 }
 .about {
-  display: grid;
-  grid-template-columns: 2fr 1.5fr;
   overflow: hidden;
   background-color: #f8f8fe;
-  padding: 3rem;
-  justify-content: center;
-  align-items: center;
+
   gap: 2rem;
+  &__container {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    width: 90%;
+    margin-inline: auto;
+  }
   @include respond(tab-port) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    &__continer {
+      grid-template-columns: 1fr;
+    }
     &__img {
       grid-row: 1/2;
     }
     &__content {
       align-items: center;
+
+      .header__primary {
+        font-size: 1.1rem;
+        text-align: center;
+      }
     }
   }
+  @include respond(phone) {
+    &__container {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
-    .parag {
-      // width: 82%;
-    }
   }
   &__link {
     color: var(--c-moderate-cyan);

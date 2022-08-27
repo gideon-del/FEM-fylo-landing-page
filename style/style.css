@@ -68,7 +68,8 @@ a:link, a:visited {
 }
 @media screen and (max-width: 900px) {
   .header-primary {
-    font-size: 2rem;
+    line-height: 40px;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
   }
 }
@@ -134,6 +135,11 @@ a:link, a:visited {
 .width {
   width: 80%;
 }
+@media screen and (max-width: 900px) {
+  .width {
+    width: 100%;
+  }
+}
 
 .header {
   font-family: "Open Sans";
@@ -145,11 +151,24 @@ a:link, a:visited {
   margin-inline: auto;
   margin-bottom: 2rem;
 }
+.header__container {
+  width: 90vw;
+  margin-inline: auto;
+  height: 100%;
+}
 @media screen and (max-width: 900px) {
   .header {
     min-height: none;
     height: auto;
     margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .header {
+    padding: 0;
+  }
+  .header__logo {
+    width: 85px;
   }
 }
 .header__nav {
@@ -217,25 +236,38 @@ a:link, a:visited {
 }
 
 .about {
-  display: grid;
-  grid-template-columns: 2fr 1.5fr;
   overflow: hidden;
   background-color: #f8f8fe;
-  padding: 3rem;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
 }
+.about__container {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
+  width: 90%;
+  margin-inline: auto;
+}
 @media screen and (max-width: 900px) {
-  .about {
+  .about__continer {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
   }
   .about__img {
     grid-row: 1/2;
   }
   .about__content {
     align-items: center;
+  }
+  .about__content .header__primary {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 690px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
   }
 }
 .about__content {
