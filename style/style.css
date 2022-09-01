@@ -296,10 +296,6 @@ a:link, a:visited {
   display: flex;
   flex-direction: column;
 }
-.about__content .header-primary {
-  text-align: center;
-  font-size: 1.2rem;
-}
 .about__link {
   color: var(--c-moderate-cyan);
   display: flex;

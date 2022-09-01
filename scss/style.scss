@@ -296,10 +296,6 @@ a {
   &__content {
     display: flex;
     flex-direction: column;
-    .header-primary {
-      text-align: center;
-      font-size: 1.2rem;
-    }
   }
   &__link {
     color: var(--c-moderate-cyan);
