@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://fem-fylo-landing-page.netlify.app/](https://fem-fylo-landing-page.netlify.app/)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://fem-fylo-landing-page.netlify.app/](https://fem-fylo-landing-page.netlify.app/)
 
 ## My process
 
