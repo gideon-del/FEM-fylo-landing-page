@@ -154,7 +154,7 @@ a:link, a:visited {
   padding: 50px 20px;
   width: min(100%, 1350px);
   margin-inline: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 9rem;
 }
 .header__container {
   width: 90vw;
@@ -260,6 +260,7 @@ a:link, a:visited {
 .about {
   overflow: hidden;
   background-color: #f8f8fe;
+  margin-bottom: 3rem;
   gap: 2rem;
 }
 .about__container {
@@ -332,6 +333,7 @@ a:link, a:visited {
 
 .icon {
   width: 2.5rem;
+  height: fit-content;
 }
 
 .profile {

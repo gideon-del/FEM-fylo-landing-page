@@ -166,7 +166,7 @@ a {
   padding: 50px 20px;
   width: min(100%, 1350px);
   margin-inline: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 9rem;
   &__container {
     width: 90vw;
     margin-inline: auto;
@@ -258,7 +258,7 @@ a {
 .about {
   overflow: hidden;
   background-color: #f8f8fe;
-
+  margin-bottom: 3rem;
   gap: 2rem;
   &__container {
     display: grid;
@@ -330,6 +330,7 @@ a {
 }
 .icon {
   width: 2.5rem;
+  height: fit-content;
 }
 .profile {
   display: flex;
